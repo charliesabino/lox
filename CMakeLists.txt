@@ -11,5 +11,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -march=native")
 
 file(GLOB_RECURSE SOURCE_FILES src/*.cpp src/*.hpp)
+include_directories(${PROJECT_SOURCE_DIR}/include)
 
 add_executable(interpreter ${SOURCE_FILES})

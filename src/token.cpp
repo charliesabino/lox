@@ -1,4 +1,4 @@
-#include "token.h"
+#include "token.hpp"
 #include <format>
 
 auto Token::to_string() -> std::string {

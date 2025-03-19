@@ -1,12 +1,10 @@
-#include "scanner.h"
+#include "scanner.hpp"
 #include <cstdlib>
 #include <cstring>
 #include <iostream>
 #include <string>
 
 auto main(int argc, char *argv[]) -> int {
-  std::cout << std::unitbuf;
-  std::cerr << std::unitbuf;
 
   if (argc < 3) {
     std::cerr << "Usage: ./your_program tokenize <filename>" << '\n';
