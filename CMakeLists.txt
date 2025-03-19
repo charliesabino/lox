@@ -7,5 +7,9 @@ project(
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -march=native")
 
-add_executable(interpreter main.cpp)
+file(GLOB_RECURSE SOURCE_FILES src/*.cpp src/*.hpp)
+
+add_executable(interpreter ${SOURCE_FILES})
